@@ -1,0 +1,12 @@
+.dealbox1 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.todaysdeals {
+    width: 75%;
+}
+
+.topproducts {
+    width: 25%;
+}

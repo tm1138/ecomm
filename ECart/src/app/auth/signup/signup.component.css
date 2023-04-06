@@ -1,0 +1,54 @@
+.signupbox {
+    font-family: "Open Sans", sans-serif;
+    min-width: 700px;
+    min-height: 500px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+}
+
+.datablock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstblock {
+    width: 45%;
+}
+
+.secondblock {
+    width: 45%;
+}
+
+.signuptext {
+    margin-bottom: 15px;
+}
+
+.signuplabel {
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.signupinbutton {
+    margin-top: 25px;
+    background-color: rgb(255, 159, 143);
+    font-weight: bold;
+}
+
+.signinlink {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+.signinlinkarea {
+    margin-top: 30px;
+}
+
+.registerFailMessage {
+    margin-top: 15px;
+    color: red;
+}

@@ -1,0 +1,12 @@
+
+<div class="topproducts">
+    <p class="h2 topproductheading">TOP PRODUCTS</p>
+    <div class="topproductlist">
+        <div *ngFor='let topproduct of topproducts' >
+            <a href="" class="topproductdetails" routerLinkActive="active" routerLink="/product/{{topproduct.productName}}">
+                <img class="topproductimage" src="{{topproduct.productImage}}" alt="first slide" style="display: block;">
+                <p class="h5 topproductname">{{topproduct.productName}}</p>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+
+.featuredbrand {
+  margin-top: 30px;
+}
+
+.brandofferbox {
+    display: flex;
+    min-height: 300px;
+    justify-content: space-between;
+}
+
+.offertextstyle {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(139, 139, 139);
+  border-bottom: 1px solid grey;
+}
+
+.brandoffer{
+    background-color: white;
+}
+
+.brandofferdetail {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  vertical-align: middle;
+  margin-bottom: 0px;
+}
+
+.brandofferbackground {
+  background-image: linear-gradient(#AAD1F9,#9876C3);
+}
+
+.brandofferlink {
+  display: flex;
+  flex-direction: column;
+}
+
+.centretexthorizontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hoverfade:hover {
+  opacity: 0.9;
+}
+
+.hoverfade:hover .changeoverhover{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: black;
+  color: #ffffff;
+}
+
+
+.buynowborder {
+  min-height: 50px;
+  padding-top: 15px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+}
+
+a:active {
+  text-decoration: none;
+}

@@ -1,0 +1,37 @@
+<div>
+    <div class="loginbox">
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        
+            <p class="signintext h2">Sign-In</p>
+            <label for="" class="loginlabel">Username:</label>
+            <input type="text" class="form-control"
+                [ngClass]="{'is-invalid': form_errors.username.length > 0}" id="usr" formControlName="username">
+            <p [ngClass]="{'invalid-feedback': form_errors.username.length > 0}">{{form_errors.username}}</p>
+    
+            <label for="" class="loginlabel">Password:</label>
+            <input type="password" class="form-control"
+                [ngClass]="{'is-invalid': form_errors.password.length > 0}" id="password" formControlName="password">
+            <p [ngClass]="{'invalid-feedback': form_errors.password.length > 0}">{{form_errors.password}}</p>
+    
+    
+            <button type="submit" class="btn btn-block loginbutton" [disabled]="submitted && !loginForm.valid">Sign-In</button>
+
+            <div class="loginFailMessage">
+                <p *ngIf="loginFailed">Login Failed. Please try again!</p>
+                <p *ngIf="loginFailed">{{loginFailedMessage}}</p>
+            </div>
+    
+        </form>
+
+        <a routerLinkActive="active" routerLink="/user/signup">
+            <p class="signup">Sign-Up!</p>
+        </a>
+
+        <a routerLinkActive="active" routerLink="/user/forgotpassword">
+            <p class="forgotpassword">Forgot Password?</p>
+        </a>
+        
+    </div>
+    
+</div>

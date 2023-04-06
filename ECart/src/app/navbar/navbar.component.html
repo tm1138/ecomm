@@ -1,0 +1,25 @@
+<div class="nav-container">
+
+    <div class="navbeg ">
+        <app-logo></app-logo>
+
+        <app-search class="search"></app-search>
+    </div>
+
+    <div class="navend">
+
+
+            <div class="navendpositionfixed">
+                <app-userdropdown *ngIf="isLoggedIn"></app-userdropdown>
+                <app-logindropdown *ngIf="!isLoggedIn"></app-logindropdown>
+
+                <div class="spacediv"></div>
+                
+                <button type="button" class="btn btn-primary cartbutton">Cart</button>
+                <div class="spacedivsmall"></div>
+            </div>
+
+
+    </div>
+  
+</div>

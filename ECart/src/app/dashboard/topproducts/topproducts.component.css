@@ -1,0 +1,60 @@
+
+.topproducts {
+    border: 1px solid rgb(242, 242, 242);
+    margin-left: 10px;
+    height: 100%;
+}
+
+.topproductheading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    background-color: rgb(242, 242, 242);
+}
+
+.topproductlist {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.topproductdetails {
+    display: flex;
+    align-items: center;
+}
+
+.topproductimage {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+.topproductname {
+    margin-left: 50px;
+}
+
+
+a {
+    color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FF7D34;
+}
+
+a:active {
+  text-decoration: none;
+}

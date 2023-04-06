@@ -1,0 +1,16 @@
+
+.serachform {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: fixed;
+    width: 650px;
+    top: 0;
+    margin-top: 25px;
+}
+
+.searchbutton {
+    width: 135px;
+    height: 37.5px;
+    margin-left: 10px;
+}

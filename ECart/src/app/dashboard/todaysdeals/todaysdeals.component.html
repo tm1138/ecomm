@@ -1,0 +1,27 @@
+
+<div class="todaysdeal">
+    <p class="h2 todaysdealheading">TODAY'S DEALS</p>
+
+    <div class="dealbox">
+        <a href="" routerLinkActive="active" routerLink="/product/{{currentDeal.productName}}">
+            <div class="dealselectedimage"><img class="" src="{{currentDeal.productImage}}" alt="first slide" style="display: block;"></div>
+        </a>
+        <div class="dealdetails">
+            <a href="" routerLinkActive="active" routerLink="/product/{{currentDeal.productName}}">
+                <p class="dealname">{{currentDeal.productName}}</p>
+            </a>
+            
+            <div class="pricedetails">
+                <p class="h3 dealprice">₹{{currentDeal.offerPrice}}&nbsp;&nbsp;</p>
+                <p class="h5 oldprice">₹{{currentDeal.oldPrice}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dealselector">
+        <div *ngFor='let todaysdeal of todaysdeals' (click)="onClick(todaysdeal.productName)" class="dealselectionbox"
+        [ngStyle]="{'border-color' : todaysdeal.productName===currentDeal.productName ? 'green':'rgb(242, 242, 242)'}" id="{{todaysdeal.productName}}">
+            <img class="dealselectionimage" src="{{todaysdeal.productImage}}" alt="first slide" style="display: block;">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+
+<div class="featuredbrand">
+    <p class="offertextstyle">{{featuredbrandtext}}</p>
+
+    <div class="brandofferbox">
+        <div class="brandoffer hoverfade" *ngFor='let offer of brandOffers'>
+            <a routerLinkActive="active" routerLink="/brandoffer/offer">
+                <img src="{{offer.brandlogo}}" style="display: block;">
+                <div class="centretexthorizontal brandofferbackground">
+                    <div></div>
+                    <p class="brandofferdetail">{{offer.brandofferdetail}}</p>
+                    <div></div>
+                </div>
+                <img src="{{offer.offerimagesource}}" alt="first slide" style="display: block;">
+                <div class="centretexthorizontal buynowborder changeoverhover">
+                    <div></div>
+                    <p class="brandofferdetail">BUY NOW</p>
+                    <div></div>
+                </div>
+            </a>
+        </div>        
+    </div>
+</div>

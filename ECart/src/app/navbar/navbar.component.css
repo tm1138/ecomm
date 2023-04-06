@@ -1,0 +1,52 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(189, 189, 189);
+    box-sizing: border-box;
+    align-items: center;
+    min-height: 100px;
+}
+
+.navbeg {
+    display: flex;
+    align-items: baseline;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.search {
+    /* margin-top: 6px; */
+    width: 80%;
+    vertical-align: baseline;
+}
+
+.navend {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    align-items: center;
+    top: 0;
+    /* margin-top: 6px; */
+}
+
+.cartbutton {
+    margin-top: 2px;
+    margin-bottom: -2px;
+}
+
+.navendpositionfixed {
+    display: flex;
+    position: fixed;
+    align-items: baseline;
+    top: 0;
+    margin-top: 25px;
+}
+
+.spacediv {
+    width: 20px;
+}
+
+.spacedivsmall {
+    width: 5px;
+}

@@ -1,0 +1,7 @@
+<carousel>
+  <slide *ngFor='let carouselOffer of carouselOffers'>
+    <a routerLinkActive="active" routerLink="/product/{{carouselOffer.productName}}">
+      <img src="{{carouselOffer.productImage}}" alt="first slide" style="display: block; width: 100%;">
+    </a>
+  </slide>
+</carousel>

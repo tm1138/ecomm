@@ -1,0 +1,89 @@
+<div>
+
+    <div class="signupbox">
+
+        <form [formGroup]="registerUserForm" (ngSubmit)="onSubmit()">
+        
+            <p class="signuptext h2">Sign-Up</p>
+
+            <div class="datablock">
+                <div class="firstblock">
+                    <label for="" class="signuplabel">First Name:</label>
+                    <input type="text" class="form-control"
+                        [ngClass]="{'is-invalid': form_errors.first_name.length > 0}" id="first_name" formControlName="first_name">
+                    <p [ngClass]="{'invalid-feedback': form_errors.first_name.length > 0}">{{form_errors.first_name}}</p>
+                </div>
+        
+                <div class="secondblock">
+                    <label for="" class="signuplabel">Last Name:</label>
+                    <input type="text" class="form-control"
+                        [ngClass]="{'is-invalid': form_errors.last_name.length > 0}" id="last_name" formControlName="last_name">
+                    <p [ngClass]="{'invalid-feedback': form_errors.last_name.length > 0}">{{form_errors.last_name}}</p>
+                </div>  
+            </div>
+
+            <div class="datablock">
+                <div class="firstblock">
+                    <label for="" class="signuplabel">Email Id:</label>
+                    <input type="text" class="form-control"
+                        [ngClass]="{'is-invalid': form_errors.email_id.length > 0}" id="email_id" formControlName="email_id">
+                    <p [ngClass]="{'invalid-feedback': form_errors.email_id.length > 0}">{{form_errors.email_id}}</p>
+                </div>
+
+                <div class="secondblock">
+                    <label for="" class="signuplabel">Mobile Id:</label>
+                    <input type="text" class="form-control"
+                        [ngClass]="{'is-invalid': form_errors.mob_number.length > 0}" id="mob_number" formControlName="mob_number">
+                    <p [ngClass]="{'invalid-feedback': form_errors.mob_number.length > 0}">{{form_errors.mob_number}}</p>
+                </div>
+            </div>
+            
+            <div class="datablock">
+                <div class="firstblock">
+                    <label for="" class="signuplabel">Username:</label>
+                    <input type="text" class="form-control"
+                        [ngClass]="{'is-invalid': form_errors.username.length > 0}" id="username" formControlName="username">
+                    <p [ngClass]="{'invalid-feedback': form_errors.username.length > 0}">{{form_errors.username}}</p>
+                </div>
+
+                <div class="secondblock">
+                    <label for="" class="signuplabel">Password:</label>
+                    <input type="text" class="form-control"
+                        [ngClass]="{'is-invalid': form_errors.password.length > 0}" id="password" formControlName="password">
+                    <p [ngClass]="{'invalid-feedback': form_errors.password.length > 0}">{{form_errors.password}}</p>
+                </div>
+            </div>
+
+            <div class="datablock">
+                <div class="firstblock">
+                    <label for="" class="signuplabel">Date Of Birth:</label>
+                    <input type="date" class="form-control datepickerwidth" [ngClass]="{'is-invalid': form_errors.dateofbirth.length > 0}"
+                        id="dateofbirth" formControlName="dateofbirth">
+                    <p [ngClass]="{'invalid-feedback': form_errors.dateofbirth.length > 0}">{{form_errors.dateofbirth}}</p>
+                </div>
+                <div class="secondblock"> </div>
+            </div>
+            
+            <button type="submit" class="btn btn-block signupinbutton" [disabled]="submitted && !registerUserForm.valid">Sign-Up</button>
+
+            <div class="registerFailMessage">
+                <p *ngIf="registerFailed">Registration Failed. Please try again!</p>
+                <p *ngIf="registerFailed">{{registerErrorMessage}}</p>
+            </div>
+    
+        </form>
+
+        <p class="signinlinkarea">
+            Already got an accout? 
+            <a routerLinkActive="active" class="signinlink" routerLink="/user/login">Sign In here</a>
+        </p>
+
+    </div>
+    
+
+    
+
+
+
+
+</div>

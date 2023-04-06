@@ -1,0 +1,18 @@
+<div class="btn-group logindropdowngroup" dropdown>
+    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+            aria-controls="dropdown-basic">
+      Hello! Sign In <span class="caret"></span>
+    </button>
+    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu dropdowncontent"
+        role="menu" aria-labelledby="button-basic">
+      <li role="menuitem">
+        <a routerLinkActive="active" class="dropdown-item" routerLink="/user/signup">Sign In</a>
+      </li>
+      <li role="menuitem">
+        <a routerLinkActive="active" class="dropdown-item" routerLink="/user/signup">Create Account</a>
+      </li>
+      <li role="menuitem">
+        <a routerLinkActive="active" class="dropdown-item" routerLink="/user/forgotpassword">Forgot Password</a>
+      </li>
+    </ul>
+</div>
